@@ -1,0 +1,18 @@
+<div class="i1">
+    <div style="display: flex; padding-left: 110px;">
+        <div class="i2">
+            <h1>
+                We Make Finding The <br> Right Car Simple
+            </h1>
+            <p>At Voiture what matters to us is making your car search and buying  experience as  <br>  simple as possible, so you can find the right car quickly  and get on with making it yours.</p>
+        </div>
+        <div>
+            <button (click)="toggleVideo()"><i class="fa-solid fa-play"></i></button>
+            <video #videoPlayer controls [hidden]="!videoVisible">
+                <source src="path/to/your/video.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+</div>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">

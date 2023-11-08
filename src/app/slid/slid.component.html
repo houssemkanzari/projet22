@@ -1,0 +1,22 @@
+<div class="card-slider">
+  <div class="card-container">
+    <div class="card" *ngFor="let voiture of displayedVoitures">
+      <div class="slide">
+        <img [src]="voiture.image" alt="{{ voiture.nome }}" />
+        <!-- Informations sur la voiture -->
+        <div class="car-details">
+          <p>Prix: {{ voiture.prix }}</p>
+          <p>Nom: {{ voiture.nome }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="pagination">
+    <div
+      class="pagination-bullet"
+      *ngFor="let pageIndex of totalPages(); let index = index"
+      [class.active]="index === (currentIndex / itemsPerSlide)"
+      (click)="goToSlide(index)"
+    ></div>
+  </div>
+</div>

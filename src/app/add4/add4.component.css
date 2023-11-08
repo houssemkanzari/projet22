@@ -1,0 +1,103 @@
+.a1{
+    background-color: #f9f9f9;
+    padding-top: 50px;
+    padding-top: 90px;
+    padding-left: 30px;
+    border-top:  1px solid #eaeaea;
+    height: 100%;
+}
+.a2{
+    height: 65px;
+    margin-bottom: 50px;
+}
+h2{
+    font-family: Inter,sans-serif;
+    line-height: 1.2;
+    color: #1a3760;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 8px;
+
+}
+.ad{
+    background-color: #fff;
+    border: 1px solid #eaeaea;
+    padding: 30px 30px 10px;
+    border-radius: 8px;
+}
+.bt{
+    display: flex;
+    position: absolute;
+    margin-left: 218px;
+}
+button{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+    border: transparent;
+    margin-top: 10px;
+}
+button:hover{
+    background-color: #f5c34b;  
+}
+.active {
+    background-color: #f5c34b; /* Changez la couleur selon vos préférences */
+    color: #ffffff; /* Changez la couleur du texte si nécessaire */
+  }
+  .scroll-to-top-button {
+    position: fixed;
+    border-radius: 8px;
+    background-color: #ffc107;
+      bottom: 15px;
+    color: #fff;
+    font-size: 18px;
+    height: 45px;
+    line-height: 40px;
+    padding: 3px 10px;
+    position: fixed;
+    right: 20px;
+    text-align: center;
+    width: 45px;
+    z-index: 99999;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    border: none;
+  }
+  /* Style du tableau */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  /* Style des en-têtes de colonnes */
+  th {
+    background-color: #f2f2f2;
+    text-align: left;
+    padding: 8px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Style des cellules de données */
+  td {
+    padding: 8px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Style des lignes impaires */
+  tr:nth-child(odd) {
+    background-color: #f9f9f9;
+  }
+  
+  /* Style au survol d'une ligne */
+  tr:hover {
+    background-color: #e0e0e0;
+  }
+  
+  /* Style de la première colonne (Nom) en gras */
+  td:first-child {
+    font-weight: bold;
+  }
+  

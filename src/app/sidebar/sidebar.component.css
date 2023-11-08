@@ -1,0 +1,117 @@
+.sidebar {
+    background-color: #0a2357;
+    padding: 30px;
+    position: fixed;
+    right: -450px; /* Déplacez la barre latérale en dehors de la vue */
+    top: 0;
+    transition: right 0.35s ease-in-out;
+  z-index: 99;
+    height: 100vh;
+    overflow-y: auto;
+    color: white;
+    
+  }
+  
+  .sidebar.active {
+    right: 0; /* Afficher la barre latérale lorsqu'elle est active */
+    width: 450px;
+  }
+  
+  
+  
+  
+  .content {
+    margin-left: 0;
+    padding: 20px;
+  }
+  
+  .menu-toggle
+  {
+   
+    top: 20px;
+    left: 20px;
+    background-color: transparent;
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+  }
+  
+  .menu-toggle.active {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  
+  
+  .sidebar.active ~ .close-menu.active {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  .content.active {
+    margin-left: 250px; /* Ajustez selon la largeur de la barre latérale */
+  }
+  .b{
+    background-color: #f5c34b;
+    color: #1a3760;
+      height: 42px;
+      line-height: 39px;
+      width: 42px;
+      text-align: center;
+      border-radius: 50%;
+      position: absolute;
+      right: 60px;
+      top: 60px;
+      cursor: pointer;
+  }
+  .h1{
+    color: #ffffff;
+    font-size: 18px;
+    font-style: normal;
+    font-family: Inter,sans-serif;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0;
+    margin-bottom: 20px;
+    text-transform: uppercase; 
+    
+      margin-top: 99px;
+  }
+  .h2{
+    color: #ffffff;
+    font-size: 18px;
+    font-style: normal;
+    font-family: Inter,sans-serif;
+    font-weight: 600;
+    line-height: 16px;
+    margin-top: 40px;
+    letter-spacing: 0;
+    margin-bottom: 20px;
+    text-transform: uppercase; 
+  }
+  .h3{
+    color: #fff;
+      font-size: 24px;
+      font-style: normal;
+      font-family: Inter,sans-serif;
+      font-weight: 600;
+      line-height: 24px;
+      letter-spacing: 0;
+      padding-top: 15px;
+  }
+  .sidebar p {
+    color: hsla(0,0%,100%,.7);
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0;
+    font-family: Inter,sans-serif;
+  }

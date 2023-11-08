@@ -1,0 +1,51 @@
+.a1{
+    background-color: #fff;
+    border: 1px solid #eaeaea;
+    height: 100%;
+    padding: 175px 0 0 5px;
+    position: sticky;
+    width: 300px;
+    padding: 66px 0 0 8px;
+
+}
+a{
+    border-radius: 8px;
+    color: #1a3760;
+    display: block;
+    font-size: 13px;
+    font-style: normal;
+    font-family: Inter,sans-serif;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: 0;
+    margin: 2px 30px;
+    padding-left: 20px;
+    transition: all .3s ease;
+    text-decoration: none;   
+    height: 55px;
+}
+a:hover{
+    background-color: #f5c34b;;
+}
+i{
+    margin-right: 10px;
+}
+.scroll-to-top-button {
+    position: fixed;
+    border-radius: 8px;
+    background-color: #ffc107;
+      bottom: 15px;
+    color: #fff;
+    font-size: 18px;
+    height: 45px;
+    line-height: 40px;
+    padding: 3px 10px;
+    position: fixed;
+    right: 20px;
+    text-align: center;
+    width: 45px;
+    z-index: 99999;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    border: none;
+  }

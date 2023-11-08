@@ -1,0 +1,79 @@
+<app-search-results-component></app-search-results-component>
+<app-serche2></app-serche2>
+<div class="c1">
+  <div class="cc1">
+      <h2> Used Vehicles For Sale </h2>  
+          <a href="" class="cc11">home&nbsp;/&nbsp;lestning</a>
+  </div> 
+  </div>
+  <div class="c2">
+    <div class="cc2">
+      <div class="cc3" >
+        <h4>Featured Listings</h4>
+    <app-slid></app-slid>
+      </div>
+      <div class="cc4">
+        <h4>Recently Viewed</h4>
+    <app-ex></app-ex>
+      </div>
+      <div class="cc5">
+        <app-imag></app-imag>
+      </div>
+    </div>
+   <div class="c3">
+    <div style="display: flex;">
+      <app-car-count-component></app-car-count-component>
+      <div class="s44" style="margin-left: 350px;">
+        <label for="voitureOptions">Sort by:</label>
+        <input  id="voitureOptions" placeholder="Date: newest First" list="optionsList" >
+        <datalist id="optionsList">
+          <option >Date: newest First </option>  
+          <option >Most Recent </option>
+         <option > Best Selling</option>
+        </datalist>
+      </div>
+    </div>
+    
+    <div style="padding-top: 30px;">
+      <div *ngFor="let voiture of displayedVoitures" class="t1" >
+        
+        <div class="tt2">
+          <div class="t22" style=" position: relative;">
+            <img [src]="voiture.image" alt="{{ voiture.nome }}" class="i"> 
+            <span
+            style="position: absolute; border-radius: 60px; color: #fff; font-size: 9px; font-family: Inter,sans-serif;
+              font-style: normal; font-weight: 600; line-height: 13px; left: 20px;
+              letter-spacing: .03em; padding: 6px 13px; position: absolute; top: 15px;
+              text-transform: uppercase; z-index: 1; transition: all .3s ease;margin-top: 20px;
+              background-color: {{ voiture.tag === 'FEATURED' ? '#eb6245' : voiture.tag === 'SPECIAL' ? '#1947e2' : 'transparent'  }}">
+            {{ voiture.tag }}
+          </span>
+         </div>
+      <div class="t33">
+        <p class="p2">{{voiture.prix}}DT</p>
+        <a href="" class="a2" [routerLink]="['/voiture-details', voiture.id_voiture]">{{voiture.nome}}</a>
+        <div style="display: flex; background-color: transparent;">
+          <p class="p3">{{voiture.vieux}} </p>
+          <p class="p4">{{voiture.vieuxx}}</p>
+        </div>
+        <div class="t333">
+          <img src="../../assets/images/autoroute.png" alt="" class="i2" >
+          <p class="p5">{{voiture.km}}</p>
+          <img src="../../assets/images/station-essence.png" alt="" class="i2" style="padding-left: 25px;">
+          <p class="p5">{{voiture.carberant}}</p>
+          <img src="../../assets/images/transmission-manuelle.png" alt="" class="i2" style="padding-left: 25px;">
+          <p class="p5"> {{voiture.transmission}}</p>
+        </div>
+      </div>
+      </div>
+     </div>
+     <div class="bt">
+      <button [class.active]="currentPage === 1" (click)="onButtonClick">1</button>
+      <button [class.active]="currentPage === 2" (click)="onButtonClick">2</button>
+      <button [class.active]="currentPage === 3" (click)="onButtonClick">3</button>
+    </div>
+    </div>
+  
+   </div>
+  </div>
+  <app-footer ></app-footer>

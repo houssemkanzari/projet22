@@ -1,0 +1,43 @@
+.cc1{
+  height: 116px;
+  padding: 50px 0px 30px;
+  display: flex;
+  padding-left: 120px;
+}
+
+.cc2{
+  width: 285px;
+  height: 105px;
+  padding: 0px 12px;
+  text-align: center;
+}
+p{
+  color: #5f6973;
+  font-family: Inter,sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0;
+}
+.counting-number {
+    color: #1a3760;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: 0;
+    margin-bottom: 10px;
+  }
+  
+  @keyframes counting-animation {
+    from {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  

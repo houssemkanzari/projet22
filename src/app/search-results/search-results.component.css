@@ -1,0 +1,233 @@
+*{
+    background-color:#f9f9f9 ;
+}
+.c1{
+    width: 100%;
+    height: 120px;
+    padding: 50px 0px;
+    background-color: #f9f9f9;
+    
+}
+.cc1{
+    display: flex;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+h2{
+    color: #1a3760;
+    font-size: 34px;
+    font-family:Inter,sans-serif ;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 41px;
+    letter-spacing: 0;
+}
+.cc11{
+    text-decoration: none;
+    color: #1a3760;
+    font-family:Inter,sans-serif;
+    font-size: 13px;
+    position:absolute;
+    right: 0;
+    padding-right: 60px;
+    padding-top: 18px;
+}
+.c2{
+    width: 100%;
+    height: 1180px;
+    display: flex;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 120px;
+    
+}
+.cc2{
+    width: 290px;
+    padding: 0px 12px;
+    
+}
+.cc3{
+    width: 261px;
+    height: 288px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 35px;
+    border: 1px solid #eaeaea;
+    padding-right: 10px;
+}
+h4{
+    color: #1a3760;
+    font-size: 16px;
+    font-style: normal;
+    font-family:Inter,sans-serif ;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 0;
+    margin-bottom: 25px;
+    background-color: #ffffff;
+}
+.cc4{
+    width: 261px;
+    height: 319px;
+    margin: 0px 0px 30px;
+    padding: 30px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    margin-bottom: 35px;
+    padding-right: 10px;
+  
+}
+.cc5{
+    width: 261px;
+    height: 300px;
+}
+.im{
+    width: 300px;
+    height: 300px;
+    border-radius: 8px;
+    position: absolute;
+}
+.c3{
+    width: 900px;
+    padding-left: 30px;
+}
+.t1{
+    width: 790px;
+    height: 190px;
+    background-color: #ffffff;
+    margin: 0px 0px 30px;
+    padding-left: 12px;
+    border-radius: 8px;
+    border: 1px solid #eaeaea;
+}
+.tt2{
+    display: flex;
+    
+   }
+   .i{
+    margin-top: 13px;
+    border-radius: 8px;
+    position: absolute;
+   }
+img{
+    width: 254px;
+    height: 162px;
+    background-color: transparent;
+    border-radius: 8px;
+    position: relative;
+   } 
+   .t33{
+    padding-left: 280px;
+    background-color: transparent;
+    position: absolute;
+    padding-top: 40px;
+    font-size: 15px;
+    font-style: normal;
+    font-family:Inter,sans-serif ;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0;
+    color: #1a3760;
+    width: 470px;
+    
+   }
+   .p2{
+    background-color: transparent;
+    color: #1a3760;
+   }
+   .p3{
+    background-color: transparent;
+    color: #f5c34b;
+    font-size: 25px;
+    margin-top: 10px;
+   }
+   .p4{
+    background-color: transparent;
+    padding-left: 10px;
+    padding-top: 7px;
+    
+    font-size: 12px;
+    font-style: normal;
+    font-family:Inter,sans-serif ;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0;
+   }
+   .a2{
+    text-decoration: none;
+    background-color: transparent;
+   }
+   .a2:hover{
+    color: #3f7ace;
+   }
+   .t1:hover{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+   }
+   .t1:hover .a2{
+    color: #3f7ace;
+   }
+  .t333{
+    border-top: 1px solid #eaeaea;
+    background-color: transparent;
+    padding-top: 15px;
+    display: flex;
+  }
+  .i2{
+    width: 18px;
+    height: 18px;
+  }
+  .p5{
+    background-color: transparent;
+    color: #5f6973;
+    font-size: 12px;
+    font-style: normal;
+    font-family:Inter,sans-serif;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0;
+    padding-left: 10px;
+    padding-top: 2px;
+  }
+.bt{
+    display: flex;
+    position: absolute;
+    margin-left: 280px;
+}
+button{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+    border: transparent;
+    margin-top: 10px;
+}
+button:hover{
+    background-color: #f5c34b;  
+}
+.active {
+    background-color: #f5c34b; /* Changez la couleur selon vos préférences */
+    color: #ffffff; /* Changez la couleur du texte si nécessaire */
+  }
+input{
+    width: 120px;
+    height: 20px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    padding: 6px 36px 6px 12px;
+    font-size: 14px;
+    color: #555;
+    border: 1px solid #ced4da;
+}
+label{
+    color: #1a3760;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0;
+    font-family: Inter,sans-serif;
+    padding-right: 8px;
+}

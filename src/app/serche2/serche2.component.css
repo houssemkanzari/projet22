@@ -1,0 +1,168 @@
+/* Styles pour le conteneur principal */
+.d1 {
+    height: 50px;
+    width: 1378px;
+    background-color: #0a2357!important;
+    padding: 15px 70px 20px;
+    display: flex;
+  }
+  
+  /* Styles pour les champs d'entrée */
+  .in {
+    height: 40px;
+    border-radius: 0.375rem;
+    padding: 6px 36px 6px 12px;
+    background-color: #fff;
+    font-size: 14px;
+    color: #555;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0 12px;
+  }
+  
+  .in:focus {
+    outline: 1px solid #ffc107;
+  }
+  
+  /* Styles pour la section d'options avancées */
+  .advanced-div {
+    width: 1378px;
+  
+    background-color: #0a2357!important;
+    padding: 0 70px;
+  }
+  
+  /* Styles pour les icônes et boutons */
+  .d2 {
+    margin-left: 100px;
+    margin-right: 20px;
+    display: flex;
+  }
+  
+  .d3 {
+    margin-left: 40px;
+  }
+  
+  .i {
+    padding-top: 13px;
+    padding-right: 10px;
+  }
+  
+  button {
+    color: #fff;
+    font-size: 13px;
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 45px;
+    letter-spacing: 0;
+    margin: 0 auto;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  .d7{
+    width: 258px;
+  }
+  /* Styles pour le bouton "Rechercher" */
+  .inp {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    height: 50px;
+    line-height: 35px;
+    letter-spacing: 0;
+    width: 173px;
+    height: 53px;
+    background-color: #ffc107;
+    color: #1a3760;
+    border-radius: 8px;
+  }
+  
+  /* Styles pour les champs avancés */
+  .d5 {
+    padding-top: 15px;
+    display: flex;
+  }
+  .d6{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+  }
+  .d8{
+    margin-left: 40px;
+  }
+  /* Styles pour le champ de type "range" */
+  input[type="range"] {
+    width: 233px;
+    margin-top: 10px;
+    background-color: transparent;
+  }
+  
+  /* Styles pour la barre de progression */
+  input[type="range"]::-webkit-slider-runnable-track {
+    width: 100px;
+    height: 5px;
+    cursor: pointer;
+    background: #eeeeee;
+    border-radius: 5px;
+  }
+  
+  /* Styles pour le curseur du champ de type "range" */
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: #ffffff;
+    border: 1px solid #3f51b5;
+    cursor: pointer;
+    margin-top: -4px;
+  }
+  
+  /* Styles pour le survol du curseur du champ de type "range" */
+  input[type="range"]::-webkit-slider-thumb:hover {
+    background: #3f51b5;
+  }
+ .label{
+    font-size: 13px;
+    font-style: normal;
+    font-family: Inter,sans-serif;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0;
+    margin-bottom: 23px;
+    color: #ffffff;
+  }
+  .span{
+    background-color: #fff;
+    color: #5f6973;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0;
+    margin-top: 20px;
+    width: 86px;
+    border-radius: 3px;
+    text-align: center;
+  }
+  p{
+    color: #ffffff;
+    font-family: nter,sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+  }
+  .ch{
+    border: 1px solid #eaeaea;
+    border-radius: 4px;
+    height: 18px;
+    width: 18px;
+  }
+  .l2{
+    padding-left: 10px;
+    font-size: 13px ;
+    font-family: Inter,sans-serif;
+    color: #ffffff;
+  }
+  

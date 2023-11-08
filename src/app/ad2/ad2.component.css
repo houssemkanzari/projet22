@@ -1,0 +1,163 @@
+.a1{
+    background-color: #f9f9f9;
+    padding-top: 50px;
+    padding-top: 90px;
+    padding-left: 55px;
+    border-top:  1px solid #eaeaea;
+}
+.a2{
+    height: 65px;
+    margin-bottom: 50px;
+}
+h2{
+    font-family: Inter,sans-serif;
+    line-height: 1.2;
+    color: #1a3760;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+p{
+    color: #5f6973;
+    font-weight: 400;
+    font-family: Inter,sans-serif;
+    font-size: 14px;
+}
+.a3{
+    background-color: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    padding: 30px;
+    width: 1059px;
+    padding: 30px;
+    margin-bottom: 30px;
+    height: 940px;
+}
+.a4{
+    background-color: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    padding: 30px;
+    width: 1059px;
+    padding: 30px;
+    margin-bottom: 30px;
+    height: 663px;  
+}
+.a5{
+    background-color: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    padding: 30px;
+    width: 1059px;
+    padding: 30px;
+    margin-bottom: 30px;
+    height: 400px;  
+}
+h4{
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0;
+    margin-bottom: 30px;
+    color: #1a3760;
+    font-family: Inter,sans-serif;
+}
+.in{
+    margin-bottom: 20px;
+    width: 330px;
+    height: 94px;
+    margin:  0px 12px;
+}
+label{
+    color: #1a3760;
+    font-family: Inter,sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0;
+}
+.inp1{
+margin-top: 8px;
+padding: 6px 12px 6px 20px;
+border-radius: 8px;
+width: 290px;
+height: 30px;
+border: 1px solid #eaeaea;
+font-size: 13px;
+color: #555;
+font-family: Inter,sans-serif;
+}
+.inp1:focus{
+    outline: 1px solid black;
+}
+.inp2{
+    margin-top: 8px;
+    padding: 6px 12px 6px 20px;
+    border-radius: 8px;
+    width: 324px;
+    height: 45px;
+    border: 1px solid #eaeaea;
+    font-size: 13px;
+    color: #555;
+    font-family: Inter,sans-serif; 
+}
+.inp2:focus{
+    outline: 1px solid #f5c34b;
+}
+.inp3{
+    height:  267px;
+    margin-top: 8px;
+    padding: 20px 12px 6px 20px;
+    border-radius: 8px;
+    width: 1005px;
+    border: 1px solid #eaeaea;
+    font-size: 13px;
+    color: #555;
+    font-family: Inter,sans-serif; 
+}
+.inp3:focus{
+    outline: 1px solid #0d6efd;
+}
+.im3{
+width: 300px;
+height: 240px;
+}
+
+/* Style pour les cases à cocher */
+input[type="checkbox"] {
+   
+    border-radius: 4px;
+    width: 15px;
+    height: 15px;
+}
+/* Style pour les options non sélectionnées */
+.unselected-option {
+    color: #5f6973;
+    font-family: Inter,sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0;
+    margin-bottom: 0;
+    outline: none;
+    padding-left: 10px;
+    width: 100%;
+    margin-top: 20px;
+}
+.option-item {
+    margin-bottom: 10px;
+  }
+ 
+button{
+    width: 150px;
+    height: 50px;
+    border-radius: 8px;
+    background-color: #f5c34b;
+    border: 1px solid #f5c34b;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #a37d24;   
+}

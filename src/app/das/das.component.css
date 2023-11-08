@@ -1,0 +1,228 @@
+.das1{
+    height: 485px;
+    padding: 40px 0px 40px;
+    background-image: url("../../assets/images/Capture6.PNG");
+    background-attachment: scroll;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h2{
+    font-size: 34px;
+    font-family: Inter,sans-serif;
+    font-style: normal;
+    color: #ffffff;
+    font-weight: 600;
+    line-height: 41px;
+    letter-spacing: 0;
+    margin-top: 0;
+    text-align: center;
+}
+
+.card-slider {
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .card-container {
+    display: flex;
+    transition: transform 0.3s ease;
+    width: 1200px;
+  }
+  
+  .card {
+    flex: 0 0 calc(100% / 4); /* 4 cartes par diapositive, ajustez selon vos besoins */
+    box-sizing: border-box;
+    width: 279px;
+    height: 329px;
+    padding: 0px 15px;
+    margin-left: 40px;
+    margin-bottom: 120px;
+  }
+  .t2{
+    width: 279px;
+    height: 350px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    position: relative; 
+  }
+  .ii1{
+    position: absolute;
+    height: 90px;
+    width: 280px;;
+    display: flex;
+    
+    border-bottom-right-radius: 8px;
+      border-bottom-left-radius: 8px;
+      bottom: 0px;
+    
+      transition: all .3s ease-in-out;
+  }
+  .pp{
+    margin-top: 44px;
+    color: transparent;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 11px;
+    font-family: Inter,sans-serif;
+  }
+  .bb1{
+    background: transparent;
+     border: transparent;
+      padding-left: 0px ;
+      cursor: pointer;
+      font-size: 11;
+       color: transparent;
+  }
+  .t3{
+    padding: 15px 4px 5px;
+    height: 150px;
+  }
+  .p1{
+    font-size: 17px;
+    font-family: Inter,sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 22px;
+      letter-spacing: 0;
+      color: #1A3760;
+      margin-bottom: 8px;
+  }
+  .p2{
+    color: #f5c34b;
+    font-size: 25px;
+    margin-top: 8px;
+    margin-right: 10px;
+  }
+  .p3{
+    font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 15px;
+      letter-spacing: 0;
+      font-family: Inter,sans-serif;
+      color: #5f6973;
+      margin-top: 4px;
+    }
+    .t4{
+      display: flex;
+    }
+  .p4{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0;
+    font-family: Inter,sans-serif;
+    color: #5f6973;
+   margin-top: 2px;
+    margin-left: 10px;
+    margin-right: 9px;
+  }
+  .aa{
+    text-decoration: none;
+    font-size: 15px;
+    font-family: Inter,sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 22px;
+      letter-spacing: 0;
+      color: #1A3760;
+      margin-bottom: 8px;
+      margin-left: 0px;
+  }
+  .i{
+    width: 280px;
+    border-radius: 8px;
+    height: 170px;
+    margin-right: 2px;
+  }
+  .i2{
+    width: 18px;
+    height: 18px;
+  }
+  i{
+    font-size: 11px;
+    padding-right: 15px;
+  }
+  .t2:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  .t2:hover  a {
+    color: #3f7ace; /* Couleur du lien lorsque vous survolez .t2 */
+  }
+  .t2:hover .ii1{
+    background-image: linear-gradient(180deg,transparent 0,#0c1227);
+   
+    content: "";
+    height: 100px;
+    left: 0;
+  
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    transition: all .3s ease-in-out;
+  }
+  .t2:hover .pp{
+    color: #ffffff;
+    margin-left: 3px;
+   }
+   .t2:hover .bb1{
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    vertical-align: middle;
+  }
+
+  .navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 20px;
+  }
+  
+  .prev-button,
+  .next-button {
+    position: absolute;
+    z-index: 4;
+    border: none;
+    background: transparent;
+    border-radius: 50%;
+    height: 50px;
+    line-height: 42px;
+    text-align: center;
+    width: 50px;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .prev-button {
+    left: 0;
+    top: 50%; /* Ajustez cette valeur pour le positionnement vertical */
+    transform: translateY(-50%); 
+    padding-bottom: 645px;
+  }
+  
+  .next-button {
+    right: 0;
+    top: 50%; 
+    transform: translateY(-50%); 
+    padding-bottom: 645px;
+  }
+  
+  
+  .prev-button i,
+  .next-button i {
+    margin-right: 0;
+    vertical-align: middle;
+  }
+  
+  .prev-button .fas,
+  .next-button .fas {
+    font-size: 20px;
+  }

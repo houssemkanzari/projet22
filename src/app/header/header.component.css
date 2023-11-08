@@ -1,0 +1,165 @@
+ * {
+    margin: 0; /* Réinitialiser les marges du corps */
+    padding: 0; /* Réinitialiser les marges internes du corps */
+  }
+.image{
+    background-image: url('../assets/image/dd.PNG');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    height: 800px;
+}
+.tb{
+    width: 100%;
+    height: 65px;
+    border-bottom: 1px solid hsla(0,0%,100%,.2);
+}
+
+  
+  td {
+    padding: 0px 20px 0px 0px;
+    text-align: center;
+    color: #ffffff;
+    size: 12px;
+    font-family: Inter,sans-serif;
+  }
+.icon{
+  font-size: 20px;
+  margin-right: 10px;
+    vertical-align: middle;
+}
+.social-icons a {
+  text-decoration: none;
+  color: #ffffff; /* Change link color as desired */
+}
+.menu{
+height: 80px;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding-top: 15px;
+
+}
+.logo{
+  color: #ffffff;
+  font-size: 50px;
+  font-family: Inter,sans-serif;
+  padding-left: 70px;
+}
+.logo span{
+  color: #f5c34b;
+  font-family: Inter,sans-serif;
+}
+.menu ul{
+  list-style: none;
+  display: flex;
+  padding-right: 120px;
+  align-items: center;
+}
+.menu ul li{
+  padding: 10px 30px;
+  position: relative;
+}
+.l a{
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: Inter,sans-serif;
+  transition: all 0.3s;
+}
+.l a:hover{
+  color: #f5c34b;
+  transition: all 0.3s;
+}
+.icon2{
+  margin-left: 8px;
+ 
+    height: auto;
+    text-shadow: none;
+    width: 10px;
+    display: inline-block;
+    color: #ffffff;
+   font-size: 20px;
+}
+.menu ul li button
+{
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: Inter,sans-serif;
+  transition: all 0.3s;
+}
+.menu ul li button:hover{
+  color: #f5c34b;
+  transition: all 0.3s;
+}
+
+.s {
+  text-decoration: none;
+  display: block;
+  padding: 10px 20px;
+  color: #333;
+  border-bottom: 1px solid transparent;
+   transition: all 0.3s ease 0s;  /* Appliquer la transition à tous les styles */
+   font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0;
+   
+}
+.s:hover {
+
+  transform: translateX(-10px);
+}
+.dropdown-btn {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 0;
+  
+  position: relative;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  border: 1px solid #ccc;
+  padding: 10px;
+  min-width: 200px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  z-index: 9;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 15px;
+  margin-top: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.scroll-to-top-button {
+  position: fixed;
+  border-radius: 8px;
+  background-color: #ffc107;
+    bottom: 15px;
+  color: #fff;
+  font-size: 18px;
+  height: 45px;
+  line-height: 40px;
+  padding: 3px 10px;
+  position: fixed;
+  right: 20px;
+  text-align: center;
+  width: 45px;
+  z-index: 99999;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+  border: none;
+}
+
+
+
+
+

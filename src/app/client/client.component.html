@@ -1,0 +1,39 @@
+<div class="f1">
+  <div class="f2">
+    <h2>Sign in</h2>
+    <div style="display: flex;">
+      <p class="p">New to sikipon auto.com?</p>&nbsp;
+      <a href="formul" class="p1">Sign up.</a>
+    </div>
+    <form (ngSubmit)="checkRole()">
+      <div style="height: 120px;">
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email" placeholder="Email" required ><br>
+        
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" placeholder="password" [(ngModel)]="password">
+        <p class="p"><input type="checkbox" name="" id="" class="c1">Remember me <span><a href="" class="p2" > Lost your password?</a></span></p><br>
+        
+        <div *ngIf="role !== undefined">
+          <p>{{ role }}</p>
+        </div>
+        
+        <button type="submit" class="b1">Signe In</button>
+      </div>
+    </form>
+  </div>
+  <div class="f3">
+    <div class="f4">
+     <h5>Connect With Social</h5>
+     <button class="b2">
+       <svg fill="#ffffff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 2.03998C6.5 2.03998 2 6.52998 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.84998C10.44 7.33998 11.93 5.95998 14.22 5.95998C15.31 5.95998 16.45 6.14998 16.45 6.14998V8.61998H15.19C13.95 8.61998 13.56 9.38998 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96C15.9164 21.5878 18.0622 20.3855 19.6099 18.57C21.1576 16.7546 22.0054 14.4456 22 12.06C22 6.52998 17.5 2.03998 12 2.03998Z"></path> </g></svg>
+         <span>Facebook</span>
+     </button>
+     <button class="b3">
+      <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 488 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"/></svg>
+      <span >google</span>
+     </button>
+     
+    </div>
+</div>
+</div>

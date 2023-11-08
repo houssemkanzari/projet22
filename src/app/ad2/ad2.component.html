@@ -1,0 +1,203 @@
+<div class="a1">
+ <div class="a2">
+ <h2>
+    Add cars
+ </h2>
+ <p>Ready to jump back in!</p>
+ </div>
+ <form (ngSubmit)="onSubmit()">
+ <div class="a3">
+   <h4>Additional</h4>
+ 
+               <div style="display: flex;">
+              
+                    <div class="in">
+                        <label for="nome">Car name</label><br>
+                        <input type="text" id="nome" [(ngModel)]="voiture.nome" name="nome" required class="inp1" placeholder="Carname">
+                    </div>
+                
+              
+                <div class="in">
+                    <label for="taglist">Tag</label><br>
+                    <select type="text" [(ngModel)]="selectedTag" name="selecteTag"  class="inp2">
+                        <option value="" disabled selected>Sélected</option>
+                    <option *ngFor="let tag of Tags" >{{tag}}</option>
+                    </select>
+                </div>
+                <div class="in" >
+                    <label for="couleur">Sélectionnez une couleur</label><br>
+                    <select id="couleur" [(ngModel)]="selectedCouleur" name="selectedCouleur" class="inp2"  >
+                        <option value="" disabled selected>Sélected</option>
+                    <option *ngFor="let couleur of couleurs" [value]="couleur">{{ couleur }}</option>
+                    </select>
+                </div>
+                </div>
+                  <div style="display: flex;">
+                    <div class="in" >
+                        <label for="carburant">carburant</label><br>
+                        <select id="carburant" [(ngModel)]="selectedCarberant" name="selectedCarberant" class="inp2"  >
+                            <option value="" disabled selected>Sélected</option>
+                        <option *ngFor="let carberant of Carberants" [value]="carberant">{{ carberant }}</option>
+                        </select>
+                    </div>
+                    <div class="in">
+                        <label for="km">Kilométrage</label><br>
+                        <input type="number" id="km" [(ngModel)]="selectedkm" name="selectedkm" placeholder="Kilométrage" class="inp1">
+                      </div>
+                      <div class="in">
+                        <label for="Engine Size">Engine Size</label><br>
+                        <input type="number" id="Engine Size" [(ngModel)]=" selectedPuissanceFiscale" name="selectedPuissanceFiscale" placeholder="Engine Size" class="inp1">
+                      </div>
+                      
+                  </div>
+                       <div style="display: flex;">
+                       <div class="in">
+                        <label for="transmission">Drive type</label><br>
+                        <select id="transmission" [(ngModel)]="selectedTransmission" name="selectedTransmission" class="inp2"  >
+                            <option value="" disabled selected>Sélected</option>
+                        <option *ngFor="let transmission of transmitions" [value]="transmission">{{ transmission }}</option>
+                        </select>
+                       </div>
+                       <div class="in">
+                        <label for="sylendre">Cylinders</label><br>
+                        <select id="sylendre" [(ngModel)]="selectedSylendre" name="selectedSylendre" class="inp2">
+                          <option value="" disabled selected>Sélected </option>
+                          <option *ngFor="let sylendre of sylenders" [value]="sylendre">{{ sylendre }}</option>
+                        </select>
+                       </div>
+                       <div class="in">
+                        <label for="drivestype">pond</label><br>
+                        <select id="drivestype" [(ngModel)]="selectedDrivetype" name="drivestype" class="inp2">
+                          <option value="" disabled selected>Sélected</option>
+                          <option *ngFor="let drivetype of drivestype" [value]="drivetype">{{ drivetype }}</option>
+                        </select>
+                       </div>
+                       </div>
+                       <div style="display: flex;">
+                        <div class="in">
+                            <label for="Doors">Doors</label><br>
+                            <input type="number" id="Doors" [(ngModel)]="selectedNbporte" name="selectedNbporte" placeholder="doors" class="inp1">
+                          </div>
+                          <div class="in">
+                            <label for="datesercules">Year</label><br>
+                        <select id="datesercules" [(ngModel)]="selectedDatesercule" name="datesercules" class="inp2">
+                          <option value="" disabled selected>Sélected</option>
+                          <option *ngFor="let datesercul of datesercules" [value]="datesercul">{{ datesercul }}</option>
+                        </select>
+                          </div>
+                          <div class="in">
+                            <label for="date of worship">date of worship</label><br>
+                            <select id="date of worship" [(ngModel)]="selectedDatemiseenventDate" name="date of worship" class="inp2">
+                              <option value="" disabled selected>Sélected</option>
+                              <option *ngFor="let datemiseenventDate of datedemisenvent" [value]="datemiseenventDate">{{ datemiseenventDate }}</option>
+                            </select>
+                          </div>
+                       </div>
+                 <div style="display: flex;">
+                    <div class="in">
+                        <label for="prix">prix</label><br>
+                        <input type="number" id="prix" [(ngModel)]="selectedPrix" name="selectedNbporte" placeholder="prix" class="inp1">
+                       </div>
+                    <div class="in">
+                        <label for="Vin">Vin</label><br>
+                        <input type="text" id="Vin" [(ngModel)]="voiture.vin" name="vin" required class="inp1" placeholder="vin">
+                  </div>  
+                  <div class="in">
+                    <label for="vieux">vieux</label><br>
+                    <input type="text" id="vieux" [(ngModel)]="voiture.vieux" name="vieux" required class="inp1" placeholder="******">
+              </div>  
+                 </div>
+                     <div class="in">
+                        <label for="vieuxx">vieux</label><br>
+                        <input type="text" id="vieuxx" [(ngModel)]="voiture.vieuxx" name="vieuxx" required class="inp1" placeholder="(0.0)">
+                     </div>           
+                    <div class="in">
+                        <label for="description">Description</label><br>
+                        <textarea id="description" [(ngModel)]="voiture.description" name="description" placeholder="Description de la voiture" class="inp3"></textarea>
+                </div>        
+                    </div>
+                    <div class="a4" style="height: 330px;">
+                          <h4>Select Your Car Option</h4>
+                          <div style="display: flex;">
+                            <div class="im3">
+                                <div class="in">
+                                    <label >Options</label ><br><br>
+                                    <div *ngFor="let option of options" class="option-item">
+                                        <label>
+                                            <input type="checkbox" [value]="option" (change)="onOptionCheckboxChange(option, $event)" >
+                                            <span [ngClass]="{'selected-option': selectedOptions.includes(option), 'unselected-option': !selectedOptions.includes(option)}">{{ option }}</span>
+                                        </label><br>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="im3">
+                                <label >Entertainment</label ><br><br>
+                                    <div *ngFor="let optionnational of optionnational" class="option-item">
+                                        <label>
+                                            <input type="checkbox" [value]="optionnational" (change)="onOptionCheckboxChange2(optionnational, $event)" >
+                                            <span [ngClass]="{'selected-option': selectedOptions.includes(optionnational), 'unselected-option': !selectedOptions.includes(optionnational)}">{{ optionnational }}</span>
+                                        </label><br>
+                                    </div>
+                            </div>
+                            <div class="im3">
+                                <label>Security</label><br><br>
+                                <div *ngFor="let security of securityOptions" class="option-item">
+                                  <label>
+                                    <input type="checkbox" [value]="security" (change)="onSecurityCheckboxChange(security, $event)">
+                                    <span [ngClass]="{'selected-option': selectedSecurity.includes(security), 'unselected-option': !selectedSecurity.includes(security)}">{{ security }}</span>
+                                  </label><br>
+                           </div>
+                         </div>
+                         <div class="im3" >
+                            <label>exterieur</label><br><br>
+                            <div *ngFor="let exterieur of exterieurs" class="option-item">
+                              <label>
+                                <input type="checkbox" [value]="exterieur" (change)="onSecurityCheckboxChange2(exterieur, $event)">
+                                <span [ngClass]="{'selected-option': selectedExterieur.includes(exterieur), 'unselected-option': !selectedExterieur.includes(exterieur)}">{{ exterieur }}</span>
+                              </label><br>
+                       </div>
+                         </div>
+                        </div>
+                    </div>
+                    <div class="a5">
+                        <h4>Gallery</h4>
+                        <div style="display: flex;">
+                             <div class="im3" style="width: 367px;height: 120px">
+                                <label for="image">Image 1 :</label><br><br>
+                                <input type="file" id="image"  (change)="onFileChange($event, 'image')" accept=".jpg,.png,.jpeg" required>
+                        </div>   
+                        <div class="im3" style="width: 367px;height: 120px">
+                            <label for="image2">Image 2 :</label><br><br>
+                            <input type="file" id="image2" (change)="onFileChange($event, 'image2')" accept=".jpg,.png,.jpeg" required>
+                        </div>
+                        <div class="im3" style="width: 367px;height: 120px">
+                            <label for="image3">Image 3 :</label><br><br>
+                            <input type="file" id="image3" (change)="onFileChange($event, 'image3')" accept=".jpg,.png,.jpeg" required>
+                        </div>
+                        </div>
+                        <div style="display: flex;">
+                           <div class="im3" style="width: 367px;height: 120px">
+                            <label for="image4">Image 4 :</label><br><br>
+                            <input type="file" id="image4" (change)="onFileChange($event, 'image4')" accept=".jpg,.png,.jpeg" required>
+                           </div>
+                           <div class="im3" style="width: 367px;height: 120px">
+                            <label for="image5">Image 5 :</label><br><br>
+                            <input type="file" id="image5" (change)="onFileChange($event, 'image5')" accept=".jpg,.png,.jpeg" required>
+                           </div>
+                           <div class="im3" style="width: 367px;height: 120px">
+                            <label for="image6">Image 6 :</label><br><br>
+                            <input type="file" id="image6" (change)="onFileChange($event, 'image6')" accept=".jpg,.png,.jpeg" required>
+                           </div>
+                        </div>
+                        <div class="im3" style="width: 367px;height: 120px">
+      
+                            <label for="image7" style="width: 367px;height: 120px">Image logo</label><br><br>
+                            <input type="file" id="image7" (change)="onFileChange($event, 'image7')" accept=".jpg,.png,.jpeg" required>
+                        </div>
+                    </div>
+        <button type="submit">Ajouter la voiture</button>
+    </form>
+  </div>
+
+
+ 

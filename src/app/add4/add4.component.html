@@ -1,0 +1,51 @@
+<div class="a1">
+    <div class="a2">
+        <h2>
+          hello admin
+        </h2>
+        <p>Ready to jump back in!</p>
+        </div>
+      <div class="ad">
+        <table style="border: 1;">
+            <thead>
+              <tr>
+                <th>Nom</th>
+                <th>Couleur</th>
+                <th>Carburant</th>
+                <th>Prix</th>
+                <th>Kilométrage</th>
+                <th>Puissance fiscale</th>
+                <th>Transmission</th>
+                <th>Cylindrée</th>
+                <th>Type de conduite</th>
+                <th>Nombre de portes</th>
+                <th>VIN</th>
+                <th>Quantité en stock</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let voiture of displayedVoitures">
+                <td>{{ voiture.nome }}</td>
+                <td>{{ voiture.couleure }}</td>
+                <td>{{ voiture.carberant }}</td>
+                <td>{{ voiture.prix }}</td>
+                <td>{{ voiture.km }}</td>
+                <td>{{ voiture.puissance_fiscale }}</td>
+                <td>{{ voiture.transmission }}</td>
+                <td>{{ voiture.sylendre }}</td>
+                <td>{{ voiture.drivetype }}</td>
+                <td>{{ voiture.nbport }}</td>
+                <td>{{ voiture.vin }}</td>
+                <td>{{ voiture.qentiterenstock }}</td>
+              </tr>
+            </tbody>
+          </table>
+          
+      </div>
+     <div class="bt">
+    <button style="margin-left: 350px;" [class.active]="activeButtonIndex === 1" (click)="onButtonClick(1)">1</button>
+    <button [class.active]="activeButtonIndex === 2" (click)="onButtonClick(2)">2</button>
+    <button [class.active]="activeButtonIndex === 3" (click)="onButtonClick(3)">3</button>
+    </div>
+
+</div>

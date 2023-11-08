@@ -1,0 +1,86 @@
+<div class="b1">
+    <div class="b11">
+     <h2>Featured Listings</h2>
+    </div>
+    <div class="b2" data-aos="fade-up" data-aos-duration="1000">
+     <div class="b22">
+       <button class="b" [class.active]="activeButtonIndex === 0" (click)="onButtonClick(0)">
+        all status
+       </button>
+       <button class="b" [class.active]="activeButtonIndex === 1" (click)="onButtonClick(1)">
+        New cars
+      </button>       
+      <button class="b" [class.active]="activeButtonIndex === 2" (click)="onButtonClick(2)">
+        Best cars
+       </button>
+     </div>
+     <div class="c">
+    <!-- remplissage ici le card de voiture -->
+    <div style="display: flex; flex-wrap: wrap;">
+      <div class="t1" *ngFor="let voiture of voitures.slice(0, 8)">
+        <div class="t2">
+          <div class="t22" style=" position: relative;">
+            <img [src]="voiture.image" alt="" class="i">
+            <span
+            style="position: absolute; border-radius: 60px; color: #fff; font-size: 9px; font-family: Inter,sans-serif;
+              font-style: normal; font-weight: 600; line-height: 13px; left: 20px;
+              letter-spacing: .03em; padding: 6px 13px; position: absolute; top: 15px;
+              text-transform: uppercase; z-index: 1; transition: all .3s ease;margin-top:20px;
+    width: 40px;
+              background-color: {{ voiture.tag === 'FEATURED' ? '#eb6245' : voiture.tag === 'SPECIAL' ? '#1947e2' : 'transparent'  }}">
+            {{ voiture.tag }}
+          </span>
+          <div class="ii1">
+            <div class="pp">
+             <button style="background-color: transparent; border: transparent;padding-left: 10px;"></button>
+              <i class="fa-solid fa-camera" >
+                    11
+              </i>
+              <i class="fa-solid fa-play" style="padding-right: 100px;">10</i>
+              <button class="bb1" ><i class="fa-solid fa-code-compare"></i></button>
+              <button class="bb1"   ><i class="fa-sharp fa-solid fa-heart"></i></button>
+            </div>
+       
+          </div>
+          
+          </div>
+          <div class="t3">
+            <p class="p1"> {{ voiture.prix }} DT</p>
+            <a href="" class="aa" [routerLink]="['/voiture-details', voiture.id_voiture]"> {{ voiture.nome }} </a>
+                   <div style="display: flex;">
+                     <p class="p2">{{voiture.vieux}} </p>
+                     <p class="p3">{{voiture.vieuxx}}</p>
+                   </div>
+                   <div style="padding-top: 20px; display: flex; border-top: 1px solid #eaeaea; ;">
+                    <div class="t4">
+    
+                      <div><img src="../../assets/images/autoroute.png" alt="" class="i2" >
+                      </div>
+                      
+                      <p class="p4">{{voiture.km}}</p>
+                    </div>
+                        <div class="t4">
+                       <img src="../../assets/images/station-essence.png" alt="" class="i2">
+                       <p class="p4">{{voiture.carberant}}</p>
+                        </div>
+                        <div class="t4">
+                          <img src="../../assets/images/transmission-manuelle.png" alt="" class="i2">
+                          <p class="p4">{{voiture.transmission}}</p>
+                        </div>
+                   </div>
+          </div>
+        </div>
+      </div>
+    </div>
+         
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </div>
+
+    <div class="b4">
+      <a routerLink="/touslescards">Show All Cars</a>
+       <a routerLink="/touslescards"href="" class="s1">+</a>
+    </div>
+    </div>
+</div>
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>

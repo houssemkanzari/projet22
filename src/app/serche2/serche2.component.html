@@ -1,0 +1,111 @@
+<div class="d1">
+  <div>
+    <input type="text" id="nome" [(ngModel)]="searchCriteria.nome" class="in" placeholder="name car">
+  </div>
+   <div >
+    <input type="text" id="nbport" list="nbport-options" class="in" placeholder="Selected Makes">
+    <datalist id="nbport-options">
+    </datalist>
+   </div>
+   <div >
+    <input type="text" id="nbport" list="nbport-options" class="in" placeholder="Selected Makes">
+    <datalist id="nbport-options">
+    </datalist>
+   </div>
+   <div>
+    <input type="text" id="nbport" list="nbport-options" class="in" placeholder="Selected Models">
+    <datalist id="nbport-options">
+    </datalist>
+    
+   </div>
+   <div class="d2">
+    <div class="i">
+      <i class="fa-solid fa-gear" style="color: #fff;"></i>
+    </div>
+    <div>
+      <button (click)="toggleAdvancedInputs()">Advanced</button>
+    </div>
+   </div>
+  <div class="d3">
+    <button (click)=" searchVoitures2()" class="inp">Rechercher</button>
+  </div>
+</div>
+<div *ngIf="showAdvancedInputs" class="advanced-div">
+<div style="display: flex;">
+  <div>
+    <input type="text" id="carberant" list="carberant" [(ngModel)]="searchCriteria.carberant" class="in" placeholder="Fualtype">
+    <datalist id="carberant">
+      <option value="essance">
+      <option value="vert">
+    </datalist>
+    <input type="text" id="nbport-options" list="nbport-options" [(ngModel)]="searchCriteria.nbport" class="in" placeholder="doors">
+    <datalist id="nbport-options">
+      <option value="0">
+      <option value="3">
+      <option value="4">
+      <option value="5">
+    </datalist>
+  </div>
+  <div>
+    <input type="text" id="transmission" list="transmission-options" [(ngModel)]="searchCriteria.transmission" class="in" placeholder="Transmation">
+    <datalist id="transmission-options">
+      <option value="auto">
+      <option value="manuel">
+      <option value="semi-auto">
+    </datalist>
+  </div>
+  <div>
+ 
+    <input type="text" id="couleure" list="couleure-options" [(ngModel)]="searchCriteria.couleure" class="in" placeholder="Interieurcolor">
+    <datalist id="couleure-options">
+      <option value="rouge">
+      <option value="vert">
+    </datalist>
+
+    <input type="text" id="couleure" list="couleure-options2" [(ngModel)]="searchCriteria.couleure" class="in" placeholder="exterieurecolor">
+    <datalist id="couleure-options2">
+      <option value="rouge">
+      <option value="vert">
+    </datalist>
+  </div>
+</div>
+<div class="d5">
+  <input type="text" id="sylendre" list="sylendre-options" [(ngModel)]="searchCriteria.sylendre" class="in" placeholder="Cylinder">
+  <datalist id="sylendre-options">
+    <option value="2sylindre">
+    <option value="3sylendre">
+  </datalist>
+  <input type="text" id="sylendre" list="sylendre-options5" [(ngModel)]="searchCriteria.sylendre" class="in" placeholder="LIst stateuse">
+  <datalist id="sylendre-options5">
+  </datalist>
+  <input type="text" id="sylendre" list="sylendre-options5" [(ngModel)]="searchCriteria.sylendre" class="in" placeholder="Max.mileage">
+  <datalist id="sylendre-options5">
+  </datalist>
+  <input type="text" id="vin" [(ngModel)]="searchCriteria.vin" class="in" placeholder="VIN number">
+</div> 
+<div class="d6">
+  <div class="d7">
+    <div class="label"><label for="rangeInput">Prix</label></div>
+    <input type="range" id="rangeInput" [(ngModel)]="searchCriteria.prix" min="0" max="10000" step="150"><br>
+     <div class="span"><span>{{ searchCriteria.prix !== undefined ? searchCriteria.prix : '0000' }}DT</span></div>
+  </div>
+  <div class="d8">
+  <div style="margin-bottom: 16px;">  <p>Features</p></div>
+<div>
+  <input type="checkbox" name="" id="" class="ch">
+  <label for="" class="l2">Adaptive Cruise Control (6,676)</label>
+</div>
+<div>
+  <input type="checkbox" name="" id="" class="ch">
+  <label for="" class="l2">Cooled Seats (9,784)</label>
+</div>
+<div>
+  <input type="checkbox" name="" id="" class="ch">
+  <label for="" class="l2">Navigation System (9,784)</label>
+</div>
+  </div>
+  </div>
+</div>
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />

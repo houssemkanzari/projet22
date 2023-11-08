@@ -1,0 +1,32 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+<div class="sidebar" [ngClass]="{ active: isSidebarActive }">
+  <!-- Contenu du menu -->
+  <button class="b" (click)="closeSidebar()">x</button>
+  <h3 class="h1">Quick Contact Info</h3>
+  <p>For any request for information or information,<br>
+    do not hesitate to contact us. Our team is at your disposal.</p>
+  
+    <h3 class="h2">contact</h3>
+    <h4 class="h3">(216)58810370</h4>
+    <p >kanzarihoussem12@gmail.com</p>
+    <h3 class="h2">office</h3>
+    <p>Germany —<br>
+      329 Queensberry Street,<br>
+      North Melbourne VIC 3051</p>
+      <h3 class="h2">OPENING HOURS</h3>
+      <p>
+        Monday – Friday: 09:00AM – 09:00PM <br>
+        Saturday: 09:00AM – 07:00PM <br>
+        Sunday: Closed <br>
+      </p>
+</div>
+
+<button class="menu-toggle" [ngClass]="{ active: isSidebarActive }" (click)="toggleSidebar()">
+  <img src="../../assets/images/hamburger (4).png" alt="" style=" color: #FFFFFF; size: 10px;">
+</button>
+
+
+<div class="content" (click)="closeSidebar()">
+  <!-- Contenu principal -->
+</div>

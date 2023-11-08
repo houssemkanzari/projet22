@@ -1,0 +1,18 @@
+<div>
+  <div class="i1">
+    <div class="ss">
+      <input type="text" [(ngModel)]="nameInput" placeholder="Nom" class="i">
+      <p *ngIf="errorMessage" class="error-message">{{ errorMessage }}</p>
+    </div>
+    <div class="s2">
+      <input type="email" [(ngModel)]="emailInput" placeholder="Email" class="i" style="margin-left: 9px;">
+      <p *ngIf="errorMessage2" class="error-errorMessage">{{ errorMessage2 }}</p>
+    </div>
+  </div>
+  <div>
+    <textarea [(ngModel)]="descriptionInput" placeholder="Description" class="i2"></textarea><br>
+    <p *ngIf="errorMessage3" class="error-errorMessage">{{ errorMessage3 }}</p>
+  </div>
+  
+  <button type="button" (click)="onSubmit()">Ajouter Revieux</button>
+</div>

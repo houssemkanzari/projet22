@@ -1,0 +1,64 @@
+.c1{
+  width:250px ;
+  height: 180px;
+  border-radius: 8px;
+}
+img{
+    width: 250px;
+    height: 180px;
+    border-radius: 8px;
+    position: absolute;
+}
+.p{
+    position: relative;
+    padding-left: 20px;
+    padding-top: 100px;
+    color: #fff;
+    font-size: 12px;
+    font-family:Inter,sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 15px;
+    letter-spacing: 0;
+    height: 79px;
+}
+.p:hover{
+  background-image: linear-gradient(180deg,transparent 0,#0c1227);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius:8px ;
+}
+
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 158px;
+ 
+}
+
+.pagination-bullet {
+  width: 8px;
+  height: 8px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagination-bullet.active {
+  background-color: #007aff;
+}
+
+/* New styles for active pagination bullet */
+.pagination-bullet.prev-active {
+  background-color: #ccc;
+}
+
+
+
+
+
+

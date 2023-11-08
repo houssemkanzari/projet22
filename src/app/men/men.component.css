@@ -1,0 +1,135 @@
+.s1{
+    width: 960px;
+    height: 605px;
+    margin-top: 12px;
+    margin-left: 270px;
+}
+.s2{
+width: 800px;
+height: 605px;
+margin: 0px 80px;
+padding: 0px 12px;
+}
+.s3{
+    width: 776px;
+    height: 295px;
+    padding: 160px 0px;
+}
+.title{
+    width: 776px;
+    height: 103px;
+    margin: 0px 0px 30px;
+   text-align: center;
+}
+.ts1{
+    font-size: 60px;
+    font-style: normal;
+    font-family: Inter,sans-serif;
+    font-weight: 600;
+    line-height: 73px;
+    letter-spacing: 0;
+    margin-bottom: 8px;
+    color: #ffffff;
+}
+.ts2{
+    width: 776px;
+    height: 22px;
+    margin: 0px 0px 10px;
+    color: #ffffff;
+}
+.p{
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0;
+}
+.s4{
+    width: 776px;
+    height: 53px;
+    text-align: center;
+}
+.s44{
+   background-color:  #f5c34b;
+    border-radius: 8px 8px 0 0;
+    color: #1a3760;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0;
+    margin: 0 3px;
+    padding: 20px 35px 15px;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+.active{
+    background-color: #ffffff;
+}
+.s5{
+    width: 700px;
+    height: 120px;
+    padding: 30px 0px;
+    text-align: center;
+    border-radius: 5px;
+    display: flex;
+    margin-left: 5px;
+    padding-left: 45px;
+    background-color: #ffffff;
+    
+}
+.h66{
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0;
+    margin: 0px 0px 8px;
+    padding: 0px 0px 0px 10px;
+    text-align: left;
+    font-family: Inter,sans-serif;
+    font-size: 13px;
+    color: #1a3760;
+}
+.s54{
+    width: 160px;
+    height: 74px;
+    margin: 0 4px;
+}
+.ss1{
+    padding: 6px 36px 6px 12px;
+    background-color: transparent;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    color: #5f6973;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    height: 40px;
+    letter-spacing: 0;
+    line-height: 35px;
+    text-align: left;
+    width: 110px;
+}
+.ss1:focus{
+    outline: 1px solid #f5c34b;
+}
+.ss{
+    padding: 6px 36px 6px 12px; 
+    border-radius: 8px;
+    color: #1a3760;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    height: 54px;
+    line-height: 16px;
+    letter-spacing: 0;
+    padding: 0 40px;
+    margin-top: 25px;
+    border: 1px solid #eaeaea;
+    background-color:  #f5c34b;
+    cursor: pointer;
+}
+
+
+
+

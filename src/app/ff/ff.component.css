@@ -1,0 +1,38 @@
+.f1{
+   margin-left: 406px;
+   width: 570px;
+   height: 90px;
+   text-align: center; 
+   margin-bottom: 40px;
+}
+h2{
+    font-family: Inter,sans-serif;
+    color: #1a3760;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 41px;
+    letter-spacing: 0;
+    margin-top: 0;
+}
+.f3{
+    display: flex;
+    padding-left: 90px;
+    padding-right: 90px;
+    
+}
+.f4{
+    width: 166px;
+    height: 14px;;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    margin-bottom: 80px;
+    padding: 40px 30px;
+    text-align: center;
+    margin-left: 25px;
+}
+p{
+    font-family: Inter,sans-serif;
+    font-size: 36px;
+    color: black;
+}

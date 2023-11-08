@@ -1,0 +1,77 @@
+<div class="s1">
+  <div class="s2">
+    <div class="s3">
+      <div class="title">
+        <h3 class="ts1">Find your next match</h3>
+        <div class="ts2">
+          <p class="p">Find the right price, dealer, and advice.</p>
+        </div>
+      </div>
+      <div class="s4">
+        <button
+          class="s44"
+          [class.active]="activeButtonIndex === 0"
+          (click)="changeColor(0)"
+        >
+          All Status
+        </button>
+        <button
+          class="s44"
+          [class.active]="activeButtonIndex === 1"
+          (click)="changeColor(1)"
+        >
+          New car
+        </button>
+        <button
+          class="s44"
+          [class.active]="activeButtonIndex === 2"
+          (click)="changeColor(2)"
+        >
+          Popular Car
+        </button>
+      </div>
+      <div class="s5">
+        <div class="s54">
+          <h6 class="h66">Nome</h6>
+          <input
+            type="text"
+            class="ss1"
+            [(ngModel)]="searchCriteria.nome"
+            name="nome"
+            placeholder="Enter nome"
+          />
+        </div>
+        <div class="s54">
+          <h6 class="h66">Prix</h6>
+          <input
+            type="number"
+            class="ss1"
+            [(ngModel)]="searchCriteria.prix"
+            name="prix"
+            placeholder="Enter prix"
+          />
+        </div>
+        <div class="s54">
+          <h6 class="h66">Carburant</h6>
+          <input
+            type="text"
+            class="ss1"
+            [(ngModel)]="searchCriteria.carberant"
+            name="carberant"
+            placeholder="Enter carberant"
+          />
+        </div>
+        <div class="s54">
+          <button class="ss" (click)="searchVoitures()">
+            <i class="fa-solid fa-magnifying-glass"></i> Search
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+>

@@ -1,0 +1,30 @@
+<div class="t1">
+ <div class="t2"> 
+ <h2>Testimonials</h2>
+ </div>
+ <div class="t3">
+        <div class="carousel" #cardContainer>
+        <div class="t4" *ngFor="let item of items; let i = index" >
+       <h4>
+        {{ item.title }}
+       </h4>
+       <p>{{ item.description }}</p>
+          </div>
+    </div>
+    </div>
+    <div class="pagination">
+        <div class="pagination-bullet" *ngFor="let page of totalPages(); let i = index"
+             [class.active]="activeSlide === i" (click)="goToSlide(i)"></div>
+      </div>
+ </div>
+  
+
+
+
+
+
+
+  
+  
+
+  

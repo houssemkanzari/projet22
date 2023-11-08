@@ -1,0 +1,13 @@
+<div class="t1" *ngFor="let voiture of voitures.slice(2,5)">
+  <div class="t2">
+       <div class="tt">
+        <img [src]="voiture.image" alt="{{ voiture.nome }}" >
+      </div>
+     <div class="tt2">
+     <p>{{voiture.prix}} DT</p>
+     <p>{{voiture.nome}}</p>
+     <p>{{voiture.carberant}}</p>
+     </div>
+  </div>
+ 
+</div>

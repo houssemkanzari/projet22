@@ -1,0 +1,66 @@
+.im{
+    width: 300px;
+    height: 300px;
+    border-radius: 8px;
+    background-image: url('../../assets/images/Capture.PNG');
+    background-size: cover;
+    background-position: 50%;
+    
+}
+.i{
+    height: 210px;
+    border-radius: 8px;
+    background-color: rgba(10,35,87,.7);
+    padding-left: 30px;
+    padding-top: 90px;
+ 
+}
+.p1{
+    color: #fff;
+    font-size: 20px;
+    font-family: Inter,sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: 0;
+    margin-bottom: 9px;
+}
+.p2{
+    color: #fff;
+    font-size: 20px;
+    font-family: Inter,sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: 0;
+}
+.p3{
+    color: #fff;
+    font-family: Inter,sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0;
+    margin-bottom: 30px;
+}
+.p4{
+    color: #fff;
+    font-family: Inter,sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+.p5{
+    font-family: Inter,sans-serif;
+    color: #ffc107;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0;
+}

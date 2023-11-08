@@ -1,0 +1,53 @@
+<div class="a1">
+    <div class="a2">
+        <h2>
+          hello admin
+        </h2>
+        <p>Ready to jump back in!</p>
+        </div>
+      <div class="ad">
+        <table style="border: 1;">
+            <thead>
+              <tr>
+                <th> id</th>
+                <th>Nom</th>
+                <th>prenom</th>
+                <th>tel</th>
+                <th>email</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let commande of displayedCommandes">
+                    <td>{{commande.id_commende}}</td>
+                       <td>{{commande.nom}}</td>
+                       <td>{{commande.prenom}}</td>
+                       <td>{{commande.tel}}</td>
+                       <td>{{commande.email}}</td>
+                </tr>
+            </tbody>
+        </table>
+    <div class="bt">
+        <button style="margin-left: 350px;" [class.active]="activeButtonIndex === 1" (click)="onButtonClick(1)">1</button>
+        <button [class.active]="activeButtonIndex === 2" (click)="onButtonClick(2)">2</button>
+        <button [class.active]="activeButtonIndex === 3" (click)="onButtonClick(3)">3</button>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
